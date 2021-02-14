@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Red SYSTEM "Red.dtd">
+<Red numEstaciones="5" numEnlaces="8">
+   <Estacion nombreEstacion="Ciudad de México" codigo="1">
+       <Cliente nombreCliente="Carlos" telefono="56581111"/>
+       <Cliente nombreCliente="Joaquin" telefono="55667788"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Veracruz" codigo="2">
+       <Cliente nombreCliente="Pedro" telefono="55771122"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Cuernavaca" codigo="3">
+       <Cliente nombreCliente="Raúl" telefono="55443322"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Pachuca" codigo="4">
+       <Cliente nombreCliente="Luis" telefono="11223311"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Tlaxcala" codigo="5">
+       <Cliente nombreCliente="Juan" telefono="55443300"/>
+   </Estacion>
+   
+    <Estacion nombreEstacion="Guerrero" codigo="6">
+       <Cliente nombreCliente="Arturo" telefono="11156581"/>
+       <Cliente nombreCliente="Miguel" telefono="78855667"/>
+   </Estacion>
+
+   <Estacion nombreEstacion="Toluca" codigo="7">
+       <Cliente nombreCliente="Sarah" telefono="71155722"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Aguascalientes" codigo="8">
+       <Cliente nombreCliente="Jeremias" telefono="55993322"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Chiapas" codigo="9">
+       <Cliente nombreCliente="Adolfo" telefono="61145233"/>
+       <Cliente nombreCliente="Tania" telefono="35482612"/>
+   </Estacion>
+   
+   <Estacion nombreEstacion="Puebla" codigo="10">
+       <Cliente nombreCliente="Antonio" telefono="8548322"/>
+       <Cliente nombreCliente="Nahomi" telefono="65125587"/>
+       <Cliente nombreCliente="Karen" telefono="31187901"/>
+   </Estacion>
+
+   <Estacion nombreEstacion="Tabasco" codigo="11">
+       <Cliente nombreCliente="Israel" telefono="55993382"/>
+   </Estacion>
+
+   <Estacion nombreEstacion="CHINA" codigo="12">
+       <Cliente nombreCliente="KIM YONG UNH" telefono="000"/>
+   </Estacion>
+
+   <Enlace primeraEstacion="1" segundaEstacion="2"/>
+
+   <Enlace primeraEstacion="2" segundaEstacion="3"/>
+
+   <Enlace primeraEstacion="3" segundaEstacion="4"/>
+
+   <Enlace primeraEstacion="3" segundaEstacion="10"/>
+
+   <Enlace primeraEstacion="4" segundaEstacion="5"/>
+
+   <Enlace primeraEstacion="5" segundaEstacion="7"/>
+
+   <Enlace primeraEstacion="5" segundaEstacion="6"/>
+
+   <Enlace primeraEstacion="6" segundaEstacion="7"/>
+
+   <Enlace primeraEstacion="7" segundaEstacion="8"/>
+
+   <Enlace primeraEstacion="8" segundaEstacion="9"/>
+   
+   <Enlace primeraEstacion="8" segundaEstacion="12"/>
+
+   <Enlace primeraEstacion="9" segundaEstacion="10"/>
+   
+</Red>
