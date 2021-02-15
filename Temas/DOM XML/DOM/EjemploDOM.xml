@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Fechas SYSTEM "cumpleanios.dtd">
+<Fechas>
+  <Cumple nombre="Pepe">
+    <Fecha anio="2000" dia="2" mes="3"/>
+    <Mensaje>Pepe cumple años el 2 de Marzo de 2000</Mensaje>
+  </Cumple>
+  <Cumple nombre="Josh">
+    <Fecha anio="1997" dia="1" mes="11"/>
+    <Mensaje>Josh cumple años el 1 de Noviembre de 1997</Mensaje>
+  </Cumple>
+  <Cumple nombre="José">
+    <Fecha anio="1995" dia="15" mes="12"/>
+    <Mensaje>José cumple años el 15 de Diciembre de 1995</Mensaje>
+  </Cumple>
+  <Cumple nombre="Emma">
+    <Fecha anio="1997" dia="15" mes="12"/>
+    <Mensaje>Emma cumple años el 15 de Diciembre de 1997</Mensaje>
+  </Cumple>
+</Fechas>

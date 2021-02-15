@@ -1,0 +1,14 @@
+<!--
+Archivo de descripción para Cumpleanios XML.
+Author: Emmanuel Cruz Hernández
+Version: 1.0 2020
+-->
+
+<!ELEMENT Fechas (#PCDATA) >
+<!ELEMENT Cumple (#PCDATA) >
+<!ELEMENT Fecha (#PCDATA) >
+<!ELEMENT Mensaje (#PCDATA) >
+<!ATTLIST Cumple nombre CDATA #REQUIRED >
+<!ATTLIST Fecha dia CDATA #REQUIRED >
+<!ATTLIST Fecha mes CDATA #REQUIRED >
+<!ATTLIST Fecha anio CDATA #REQUIRED >
