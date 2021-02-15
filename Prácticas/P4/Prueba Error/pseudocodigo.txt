@@ -1,0 +1,42 @@
+public void devuelveMinimo(cola/lista/arreglo de MESAS, cola/lista/arreglo de Clientes ){
+	Cliente cliente1 = cola/lista/arreglo de Clientes.primera posicion
+	int comensalesDelCliente = cliente1.getNumeroDeComensales();
+	int minimo =0;
+	int final =0;
+
+				 //Ajustar condicion de paro del for
+	for(int i=0;i<=listaDeMesas.longitud;i++){
+		Mesa mesaN =  cola/lista/arreglo de MESAS.Posicion(i)
+		int capacidadMesa = mesaN.getCapacidadDeLuegares();
+
+		if(i==listaMesas.longitud-1){
+				if(capacidadMesa=<minimo ){
+					minimo=capacidadMesa;
+				}		
+			return minimo
+		}
+
+
+		if(capacidadMesa<comensalesDelCliente){
+				i+1;
+				mesaN=cola/lista/arreglo de MESAS.Posicion(i)
+				capacidadMesa = mesaN.getCapacidadDeLuegares();
+				minimo=capacidadMesa;
+
+		}
+			if(i==0){
+				minimo=capacidadMesa;
+				final=minimo;
+			}else{
+				if(capacidadMesa=<minimo ){
+					minimo=capacidadMesa;
+				}
+
+			}
+		
+
+
+
+	}
+
+}

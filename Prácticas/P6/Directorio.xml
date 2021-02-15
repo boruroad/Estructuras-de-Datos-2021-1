@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Ciudades SYSTEM "Directorio.dtd">
+<Ciudades>
+  <Ciudad estado="2" latitud="1.0" longitud="20.0" nombre="NERAK"/>
+</Ciudades>

@@ -1,0 +1,86 @@
+antes del cambio 
+
+	public static Mesa mensajeAsignaMejor(Cola<Mesa> colaM, Cola<Cliente> colaC ){
+		Cliente c = colaC.first();
+		int numComen = c.getComensales();
+		int dActual=0;
+		int dMinimo=0;
+		String mejorMesa="";
+		String mensaje="";
+		Mesa n = null;
+		//Cola<Mesa> colaM = disponibles(colaTodas);
+		for (int i=0;i<=colaM.size()-1;i++){
+				n = colaM.regresa(i);
+				int cupoMesa = n.getCapacidadComen();
+///////////7 CASO 2 MESAS
+				if(colaM.size()==2){
+						if(i==0){
+							dActual =cupoMesa-numComen; 
+							dMinimo = dActual;
+							if(cupoMesa<numComen){
+								mensaje="RESERVACIÓN CANCELADA PARA "+c.getNombre()+"  (no hay suficientes sillas para sentar a los comensales con nuestras mesas disponibles)";
+							}else{
+								mejorMesa = n.getIdentificador();
+								mensaje ="La mejor mesa respecto al numero de comensales para "+c.getNombre()+" es "+mejorMesa;
+							}
+						}
+
+						if((i>0) && (mensaje.equals("RESERVACIÓN CANCELADA PARA "+c.getNombre()+" (no hay suficientes sillas para sentar a los comensales con nuestras mesas disponibles)"))){
+							if(cupoMesa<numComen){
+								return mensaje;
+							}else{
+								mejorMesa = n.getIdentificador();
+								mensaje ="La mejor mesa respecto al numero de comensales para "+c.getNombre()+" es "+mejorMesa;
+								return mensaje;								
+							}
+
+						}
+
+						if((i>0) && (mensaje.contains("La mejor mesa respecto"))){
+							if(cupoMesa<numComen){
+								return mensaje;
+							}else{
+								dActual=cupoMesa-numComen;
+								if(dMinimo>=dActual){
+									if(dActual>=0){
+										dMinimo=dActual;
+										mejorMesa=n.getIdentificador();
+										mensaje ="La mejor mesa respecto al numero de comensales para "+c.getNombre()+" es "+mejorMesa;
+									}else{
+								       	mensaje="RESERVACIÓN CANCELADA PARA "+c.getNombre()+" (no hay suficientes sillas para sentar a los comensales con nuestras mesas disponibles)";
+									}
+								}
+							}
+
+						}					
+
+				}
+///////////77	FIN CASO 2 MESAS			
+					if((i==0) && (colaM.size() !=2)) {
+						dActual =cupoMesa-numComen; 
+						dMinimo = dActual;
+						if(cupoMesa<numComen){
+							mensaje="RESERVACIÓN CANCELADA PARA "+c.getNombre()+" (no hay suficientes sillas para sentar a los comensales con nuestras mesas disponibles)";
+						}else{
+							mejorMesa = n.getIdentificador();
+							mensaje =c.getNombre()+" está ocupando la mesa "+mejorMesa;
+							n.setEstado(true);
+						}
+					}
+
+			if((i>0) && (colaM.size()!=2)){
+				dActual=cupoMesa-numComen;
+				if(dMinimo>=dActual){
+					if(dActual>=0){
+						dMinimo=dActual;
+						mejorMesa=n.getIdentificador();
+						mensaje =c.getNombre()+" está ocupando la mesa "+mejorMesa;
+						n.setEstado(true);
+					}else{
+				       	mensaje="RESERVACIÓN CANCELADA PARA "+c.getNombre()+" (no hay suficientes sillas para sentar a los comensales con nuestras mesas disponibles)";
+					}
+				}
+			}
+		}
+		return mensaje;
+	}	

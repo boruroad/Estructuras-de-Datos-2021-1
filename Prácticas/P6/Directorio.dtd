@@ -1,0 +1,15 @@
+<!--
+Archivo de descripción para el directorio en archivo XML.
+Author: Adrián Bonilla Ruiz
+Num. Cta. 31721903-8
+Version: 1.0 2020
+-->
+
+<!ELEMENT Directorio (#PCDATA) >
+<!ELEMENT Ciudad (#PCDATA) >
+
+
+<!ATTLIST Ciudad nombre CDATA #REQUIRED >
+<!ATTLIST Ciudad estado CDATA #REQUIRED >
+<!ATTLIST Ciudad longitud CDATA #REQUIRED >
+<!ATTLIST Ciudad latitud CDATA #REQUIRED>

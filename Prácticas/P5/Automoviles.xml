@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE Automoviles SYSTEM "Automoviles.dtd">
+
+<!--
+Archivo XML.
+Representa los Automoviles.
+Author: Adrián Bonilla Ruiz
+Num. Cta. 31721903-8 
+Version: 1.0 2020
+-->
+
+ <Automoviles>
+ 	<Auto marca="Honda" modelo="Civic" placas="DFS-76-23">
+ 		<Propietario nombre="Pablo" materno="Moreno" paterno="Reyes"/>
+ 		<Opinion>Tiene muy buen rendimiento</Opinion>
+ 	</Auto>
+ 	<Auto marca="BMW" modelo="Serie 2" anio="2014">
+ 		<Propietario nombre="Esteban" materno="Herrera" paterno="Ortega"/>
+ 		<Opinion>Ahorra gasolina</Opinion>
+ 	</Auto>
+ 	<Auto marca="Ford" modelo="Focus" placas="HBZ-87-32" anio="2015">
+ 		<Propietario nombre="Daniela" materno="Torres" paterno="Aguilar"/>
+ 		<Opinion>Es muy práctico</Opinion>
+ 	</Auto>
+ 	<Auto marca="Nissan" modelo="X-Trail">
+ 		<Propietario nombre="Laura" materno="Lara" paterno="Fuentes"/>
+ 		<Opinion>Buena distribución de espacio</Opinion>
+ 	</Auto>
+ </Automoviles>
