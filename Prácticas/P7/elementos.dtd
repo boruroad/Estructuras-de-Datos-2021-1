@@ -1,0 +1,15 @@
+<!--
+Archivo de descripción para la tabla periódica archivo XML.
+Author: Adrián Bonilla Ruiz
+Num. Cta. 31721903-8
+Version: 1.0 2020
+-->
+
+<!ELEMENT tabla (#PCDATA) >
+<!ELEMENT elemento (#PCDATA) >
+
+
+<!ATTLIST elemento nombre  CDATA #REQUIRED >
+<!ATTLIST elemento simbolo CDATA #REQUIRED >
+<!ATTLIST elemento numero  CDATA #REQUIRED >
+<!ATTLIST elemento masa    CDATA #REQUIRED >

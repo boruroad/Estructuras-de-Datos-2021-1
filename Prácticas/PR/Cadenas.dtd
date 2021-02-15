@@ -1,0 +1,14 @@
+<!--
+Archivo de descripción para archivo XML.
+Author: Adrián Bonilla Ruiz
+Num. Cta. 31721903-8
+Version: 1.0 2021
+-->
+
+<!ELEMENT Cadenas (#PCDATA) >
+<!ELEMENT Cadena (#PCDATA) >
+
+
+<!ATTLIST Ciudad nombre CDATA #REQUIRED >
+<!ATTLIST Ciudad estado CDATA #REQUIRED >
+
