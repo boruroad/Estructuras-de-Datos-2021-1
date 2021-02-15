@@ -1,0 +1,11 @@
+0,Pablo López Morales,15/11/1980,5000.0,Supervisor de vendedores
+1,Francisco Aguirre Lara,01/12/1984,5000.0,Supervisor de vendedores
+2,Zia López López,06/05/1989,5000.0,Supervisor de vendedores
+3,Nahomi Veláz Guitierrez,20/05/2001,3000.0,Gerente
+4,Miguel Camino Naranjo,17/03/1974,3000.0,Vendedor
+5,Felipe Quintanar Ferrer,15/02/1990,3000.0,Vendedor
+6,Susana Amat Mena,18/01/1969,2500.0,Intendente
+7,Irene Garrido Amate,28/11/1995,2500.0,Intendente
+8,María Campos Vique,25/02/1986,1500.0,Servicio al cliente
+9,Melanie Casas Garza,19/03/1999,1500.0,Servicio al cliente
+10,neit asdf sdfg,25/11/2001,25.0,asdf
